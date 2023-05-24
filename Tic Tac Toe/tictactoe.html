@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="https://img.icons8.com/external-funky-outlines-amoghdesign/200/000000/external-cross-sports-and-games-vol-02-funky-outlines-amoghdesign.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="modes-screen">
+            <div class="mode" id="two-player">
+                <span>TWO PLAYER MODE</span>
+                <img src="./double.jpeg" alt="Get ready to face the ultimate playoff!">
+            </div>
+            <div class="mode" id="bot">
+                <span>ONE PLAYER MODE</span>
+                <img src="./single.jpeg" alt="Think you're smarter than the computer?">
+            </div>
+        </div>
+        <div class="name-input-screen">
+            <input type="button" value="Return" class="return-btn btn">
+            <form action="" class="name-form">
+                <div class="two-player-mode-input input-name">
+                    <label for="player-x">PLAYER 'X'</label>
+                    <input type="text" name="playerX" id="player-x" required>
+                    <label for="player-o">PLAYER 'O'</label>
+                    <input type="text" name="playerO" id="player-o" required>
+                    <input type="submit" value="Start" class="start-btn btn">
+                </div>
+            </form>
+            <form action="" class="name-form">
+                <div class="bot-mode-input input-name">
+                    <label for="human">HUMAN</label>
+                    <input type="text" name="human" id="human" required>
+                    <input type="submit" value="Start" class="start-btn btn">
+                </div>
+            </form>
+        </div>
+        <div class="game-board-screen">
+            <input type="button" value="Return" class="return-btn btn">
+            <p class="player-turn-display">Player <span></span>'s Turn</p>
+            <div class="board">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+        </div>
+        <div class="modal">
+            <p class="modal-msg"></p>
+        </div>
+    </div>
+    <!-- For sound effects -->
+    <audio id="sound-effect-win" src="C:\Users\91944\Downloads\sound-effects_win.mp3"></audio>
+    <audio id="sound-effect-draw" src="C:\Users\91944\Downloads\sound-effects_draw.mp3"></audio>
+
+    <!-- LottieFiles -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"
+        integrity="sha512-yAr4fN9WZH6hESbOwoFZGtSgOP+LSZbs/JeoDr02pOX4yUFfI++qC9YwIQXIGffhnzliykJtdWTV/v3PxSz8aw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
